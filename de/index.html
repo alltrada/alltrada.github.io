@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>alltrada | Großhandelseinkauf, B2B-Distribution &amp; Retouren</title>
+<meta name="description" content="alltrada aus Dresden steht für Großhandelseinkauf, B2B-Distribution und Refurbished-Geräte wie Saugroboter und Kaffeevollautomaten aus Kundenretouren.">
+<link rel="canonical" href="https://alltrada.com/de/">
+<link rel="alternate" hreflang="en" href="https://alltrada.com/">
+<link rel="alternate" hreflang="de" href="https://alltrada.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://alltrada.com/">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>
+// Einblenden nur für Menschen: Suchmaschinen und Vorschau-Renderer bekommen alles sofort sichtbar
+if (!/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent)) document.documentElement.classList.add("js");
+</script>
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="alltrada">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="alltrada | Handel und Distribution von Konsumgütern">
+<meta property="og:description" content="Strukturierter Einkauf. Professionelle Distribution. Langfristige Partnerschaften.">
+<meta property="og:url" content="https://alltrada.com/de/">
+<meta property="og:image" content="https://alltrada.com/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="../fonts/plex-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/plex-600.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://alltrada.com/#organization",
+      "name": "alltrada",
+      "legalName": "Philip Drechsler",
+      "alternateName": "Drechsler Trading & Commerce",
+      "url": "https://alltrada.com/",
+      "logo": "https://alltrada.com/img/logo.png",
+      "description": "Handel und Distribution von Konsumgütern",
+      "email": "contact@alltrada.com",
+      "telephone": "+49 174 1518634",
+      "vatID": "DE408922138",
+      "founder": { "@type": "Person", "name": "Philip Drechsler" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "St. Petersburger Straße 30",
+        "postalCode": "01069",
+        "addressLocality": "Dresden",
+        "addressCountry": "DE"
+      },
+      "contactPoint": [
+        { "@type": "ContactPoint", "contactType": "customer service", "email": "contact@alltrada.com", "telephone": "+49 174 1518634", "availableLanguage": ["German", "English"] },
+        { "@type": "ContactPoint", "contactType": "purchasing", "email": "purchasing@alltrada.com", "telephone": "+49 174 1518634", "availableLanguage": ["German", "English"] }
+      ],
+      "sameAs": ["https://www.ebay.de/str/dtcmarket"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alltrada.com/de/#website",
+      "url": "https://alltrada.com/de/",
+      "name": "alltrada",
+      "inLanguage": "de",
+      "publisher": { "@id": "https://alltrada.com/#organization" }
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face { font-family: "Plex"; src: url("../fonts/plex-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex"; src: url("../fonts/plex-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Plex"; src: url("../fonts/plex-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+:root {
+  --paper: #F4F1EA;
+  --paper-2: #ECE7DC;
+  --card: #FBFAF6;
+  --ink: #1F1C18;
+  --ink-2: #2B2B2B;
+  --muted: #6B645A;
+  --gold: #C6A75E;
+  --gold-text: #7A5E22;
+  --line: rgba(31, 28, 24, .12);
+  --night: #1B1814;
+  --night-2: #25211C;
+  --night-text: #F1ECE2;
+  --night-muted: #B4AB9B;
+  --radius: 18px;
+  --wrap: 1200px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --header-h: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 12px); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink-2);
+  font: 400 17px/1.65 "Plex", system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3, h4 { color: var(--ink); margin: 0; font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+.dot { color: var(--gold); }
+.eyebrow { font-size: 13px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-text); }
+.accent { display: block; width: 72px; height: 2px; background: var(--gold); margin: 18px 0 28px; }
+.muted { color: var(--muted); }
+
+/* Knöpfe */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  height: 48px; padding: 0 22px; border-radius: 999px;
+  font: 500 15px/1 "Plex", sans-serif; text-decoration: none; white-space: nowrap;
+  transition: background .2s, color .2s, border-color .2s, transform .2s;
+}
+.btn-ink { background: var(--ink); color: var(--paper); }
+.btn-ink:hover { background: #000; }
+.btn-line { border: 1px solid var(--line); color: var(--ink); background: transparent; }
+.btn-line:hover { border-color: var(--ink); }
+.btn-gold { background: var(--gold); color: var(--night); }
+.btn-gold:hover { background: #D4B771; }
+.btn .arr { transition: transform .2s; }
+.btn:hover .arr { transform: translateX(3px); }
+
+/* Kopfzeile */
+.header {
+  position: sticky; top: 0; z-index: 50; height: var(--header-h);
+  background: rgba(244, 241, 234, .82);
+  backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid transparent; transition: border-color .3s;
+}
+.header.scrolled { border-bottom-color: var(--line); }
+.header .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.logo { font-size: 26px; font-weight: 600; letter-spacing: -0.035em; color: var(--ink); text-decoration: none; }
+.nav { display: flex; align-items: center; gap: 30px; }
+.nav a { font-size: 15px; font-weight: 500; color: var(--ink-2); text-decoration: none; position: relative; padding: 6px 0; white-space: nowrap; }
+.nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .25s; }
+.nav a:hover::after, .nav a.active::after { transform: scaleX(1); }
+.nav .btn { height: 40px; padding: 0 18px; font-size: 14px; }
+.nav .btn-ink, .nav .btn-ink:hover { color: var(--paper); }
+.nav .btn::after { display: none; }
+.nav .lang { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; line-height: 1; }
+.nav .lang b, .nav .lang a { padding: 6px 9px; border-radius: 999px; font-weight: 500; font-size: 13px; }
+.nav .lang b { background: var(--ink); color: var(--paper); }
+.nav .lang a { color: var(--muted); }
+.nav .lang a:hover { color: var(--ink); }
+.nav .lang a::after { display: none; }
+.menu-btn { display: none; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 12px; background: transparent; cursor: pointer; }
+.menu-btn span { display: block; width: 18px; height: 1.5px; background: var(--ink); margin: 4px auto; transition: transform .25s, opacity .25s; }
+
+/* Hero */
+.hero { position: relative; padding: clamp(40px, 7vw, 96px) 0 clamp(64px, 8vw, 112px); overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: 0 0 0 42%; pointer-events: none; opacity: .4;
+  background:
+    linear-gradient(118deg, transparent 49.85%, rgba(198,167,94,.55) 50%, transparent 50.15%) 0 0 / 100% 100% no-repeat,
+    linear-gradient(28deg, transparent 49.9%, rgba(198,167,94,.35) 50%, transparent 50.1%) 0 0 / 100% 100% no-repeat;
+}
+.hero .wrap { position: relative; display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+.hero h1 { font-size: clamp(64px, 10vw, 128px); letter-spacing: -0.055em; line-height: .95; }
+.hero h1 .sub { display: block; margin-top: 22px; font-size: clamp(22px, 2.4vw, 30px); font-weight: 400; letter-spacing: -0.01em; line-height: 1.3; color: var(--ink-2); }
+.hero .tagline { margin-top: 14px; font-size: clamp(16px, 1.5vw, 19px); color: var(--muted); }
+.hero .what { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
+.hero .what h2 { font-size: 15px; font-weight: 600; letter-spacing: 0; margin-bottom: 12px; }
+.hero .what li { position: relative; padding-left: 26px; margin: 8px 0; }
+.hero .what li::before { content: ""; position: absolute; left: 0; top: .82em; width: 14px; height: 1.5px; background: var(--gold); }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.hero-media { position: relative; margin-right: calc(var(--gutter) * -1); }
+.hero-media img { width: 118%; max-width: none; height: auto; margin-left: -6%; }
+.hero-media .float { animation: schweben 7s ease-in-out infinite; }
+@keyframes schweben { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+/* Abschnitte */
+section { position: relative; }
+.sec { padding: clamp(72px, 9vw, 128px) 0; }
+.sec-head { max-width: 760px; margin-bottom: clamp(36px, 5vw, 56px); }
+.sec-head h2 { font-size: clamp(32px, 4vw, 48px); }
+.sec-head .lead { font-size: clamp(17px, 1.6vw, 20px); color: var(--muted); }
+
+/* Geschäftsbereiche, Überblick */
+.areas { padding-top: 0; }
+.area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.area {
+  position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 28px;
+  min-height: 420px; padding: clamp(28px, 3.5vw, 44px); border-radius: var(--radius);
+  text-decoration: none; overflow: hidden; transition: transform .35s ease, box-shadow .35s ease;
+}
+.area:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -34px rgba(40, 30, 10, .45); }
+.area h3 { font-size: clamp(26px, 2.6vw, 34px); margin: 10px 0 14px; }
+.area p { max-width: 460px; }
+.area-new { background: var(--card); border: 1px solid var(--line); }
+.area-new p { color: var(--muted); }
+.area-ret { background: var(--night); color: var(--night-text); }
+.area-ret h3 { color: var(--night-text); }
+.area-ret .eyebrow { color: var(--gold); }
+.area-ret p { color: var(--night-muted); }
+.area .art { position: absolute; right: -24px; bottom: -18px; width: min(52%, 300px); pointer-events: none; transition: transform .6s ease; }
+.area:hover .art { transform: translateY(-6px); }
+.area .copy, .area .foot { position: relative; z-index: 1; }
+.area .copy { max-width: 64%; }
+.more { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 15px; }
+.area-new .more { color: var(--ink); }
+.area-ret .more { color: var(--gold); }
+
+/* Über uns */
+.about { background: var(--paper-2); }
+.about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(32px, 6vw, 96px); }
+.about-grid .quote { font-size: clamp(22px, 2.2vw, 28px); line-height: 1.35; color: var(--ink); font-weight: 500; letter-spacing: -0.015em; }
+.about-text p + p { margin-top: 18px; }
+
+/* Geschäftsbereiche im Detail: Neuware hell, Retouren dunkel, gleicher Aufbau */
+.zone {
+  --z-bg: var(--paper); --z-text: var(--ink); --z-muted: var(--muted); --z-line: var(--line);
+  --z-card: var(--card); --z-card-hover: #fff; --z-accent: var(--gold-text);
+  background: var(--z-bg); color: var(--z-text); overflow: hidden;
+}
+/* Retouren im warmen Mittelton statt fast schwarz (Philip 26.10.2026: weniger harter Wechsel hell, dunkel, hell) */
+.zone.ton {
+  --z-bg: #E2D7C2; --z-text: var(--ink); --z-muted: #5C5449; --z-line: rgba(31,28,24,.16);
+  --z-card: #ECE4D4; --z-card-hover: #F3ECDF; --z-accent: #6E541E;
+}
+.zone h2, .zone h3 { color: var(--z-text); }
+.zone .eyebrow { color: var(--z-accent); }
+.z-intro { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); align-items: end; margin-bottom: clamp(48px, 6vw, 72px); }
+.z-intro h2 { font-size: clamp(34px, 4.4vw, 56px); margin-top: 12px; }
+.z-intro .tagline { margin-top: 16px; font-size: clamp(17px, 1.6vw, 20px); color: var(--z-accent); }
+.z-intro .body { color: var(--z-muted); }
+.z-intro .body p + p { margin-top: 16px; }
+.cats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.cats.six { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.cat {
+  position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 18px;
+  min-height: 260px; padding: 22px 20px 20px; border-radius: 16px; text-decoration: none;
+  background: var(--z-card); border: 1px solid var(--z-line);
+  transition: border-color .3s, background .3s, transform .3s;
+}
+.cats.six .cat { min-height: 210px; }
+a.cat:hover, a.cat:focus-visible { border-color: rgba(198,167,94,.55); background: var(--z-card-hover); transform: translateY(-3px); }
+.cat svg { width: 112px; height: 112px; margin: 6px auto 0; fill: none; stroke: var(--z-text); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .4s ease; }
+.cats.six .cat svg { width: 92px; height: 92px; }
+a.cat:hover svg { transform: scale(1.05); }
+.cat svg .g { stroke: var(--gold); }
+.cat svg .gf { fill: var(--gold); stroke: none; }
+.cat svg .f { opacity: .3; }
+.cat .label { color: var(--z-text); }
+.cat .label b { display: block; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
+.cats.six .cat .label b { font-size: 16px; }
+.cat .label span { font-size: 13.5px; color: var(--z-muted); }
+.cat .go { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--gold); font-size: 15px; border: 1px solid rgba(198,167,94,.35); opacity: 0; transition: opacity .3s; }
+a.cat:hover .go, a.cat:focus-visible .go { opacity: 1; }
+.zone .z-sub { margin: clamp(56px, 7vw, 88px) 0 0; font-size: 13px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--z-muted); line-height: 1.4; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 18px; border-top: 1px solid var(--z-line); }
+.step { padding: 28px 28px 0 0; }
+.step + .step { padding-left: 28px; border-left: 1px solid var(--z-line); }
+.step .n { font-size: 13px; font-weight: 600; color: var(--z-accent); letter-spacing: .06em; }
+.step h3 { font-size: 19px; margin: 14px 0 8px; letter-spacing: -0.01em; }
+.step p { font-size: 15.5px; color: var(--z-muted); line-height: 1.6; }
+.promise {
+  display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(28px, 5vw, 72px);
+  margin-top: clamp(56px, 7vw, 88px); padding: clamp(28px, 4vw, 48px); border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(198,167,94,.16), rgba(198,167,94,.04) 60%); border: 1px solid rgba(198,167,94,.35);
+}
+.promise h3 { font-size: clamp(26px, 2.8vw, 36px); margin-top: 10px; }
+.promise .lead { margin-top: 14px; font-size: 17px; color: var(--z-text); }
+.promise ul { display: grid; gap: 20px; align-content: start; }
+.promise .fine { grid-column: 1 / -1; padding-top: 20px; border-top: 1px solid rgba(198,167,94,.3); font-size: 13.5px; line-height: 1.6; color: var(--z-muted); }
+.promise li { padding-top: 16px; border-top: 1px solid rgba(198,167,94,.45); }
+.promise li b { display: block; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; color: var(--z-text); margin-bottom: 6px; }
+.promise li span { display: block; font-size: 15px; line-height: 1.55; color: var(--z-muted); }
+.z-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; margin-top: clamp(48px, 6vw, 72px); padding: 28px clamp(24px, 3vw, 36px); border-radius: var(--radius); background: var(--z-card); border: 1px solid var(--z-line); }
+.z-cta .facts { display: flex; gap: clamp(24px, 4vw, 56px); }
+.z-cta .facts b { display: block; font-size: 30px; font-weight: 600; letter-spacing: -0.03em; color: var(--z-text); line-height: 1.1; }
+.z-cta .facts small { display: block; margin-top: 4px; font-size: 13.5px; line-height: 1.35; color: var(--z-muted); }
+.z-cta .src { display: inline-block; margin-top: 14px; font-size: 13px; color: var(--z-muted); text-decoration: none; border-bottom: 1px solid var(--z-line); }
+.z-cta .src:hover { color: var(--z-text); }
+.z-cta .mail small { display: block; font-size: 13.5px; color: var(--z-muted); margin-bottom: 4px; }
+.z-cta .mail a { font-size: clamp(20px, 2vw, 26px); font-weight: 600; letter-spacing: -0.02em; color: var(--z-text); text-decoration: none; }
+.z-cta .mail a:hover { color: var(--z-accent); }
+.z-cta .side { display: flex; flex-wrap: wrap; gap: 12px; }
+.zone.ton .promise { background: linear-gradient(135deg, rgba(198,167,94,.24), rgba(198,167,94,.06) 60%); border-color: rgba(138,109,44,.4); }
+.zone.ton .btn-line { border-color: rgba(31,28,24,.22); }
+.zone.ton .btn-line:hover { border-color: var(--ink); }
+
+/* Einkauf */
+.tabs { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--paper-2); border: 1px solid var(--line); margin-bottom: 32px; }
+.tabs button { height: 42px; padding: 0 20px; border: 0; border-radius: 999px; background: transparent; font: 500 15px/1 "Plex", sans-serif; color: var(--muted); cursor: pointer; transition: background .2s, color .2s; }
+.tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.panel { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
+.panel[hidden] { display: none; }
+.box { padding: clamp(24px, 3vw, 36px); border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
+.box h3 { font-size: 20px; margin-bottom: 8px; letter-spacing: -0.01em; }
+.box > p.muted { margin-bottom: 20px; }
+.focus { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+.focus li { padding: 14px 0; border-top: 1px solid var(--line); }
+.focus b { display: block; font-weight: 500; color: var(--ink); }
+.focus span { font-size: 15px; color: var(--muted); }
+.note { margin-top: 20px; padding: 14px 16px; border-radius: 12px; background: var(--paper); font-size: 15px; color: var(--ink); border-left: 2px solid var(--gold); }
+.stack { display: grid; gap: 20px; align-content: start; }
+.xlist li { position: relative; padding: 8px 0 8px 28px; border-top: 1px solid var(--line); font-size: 15.5px; }
+.xlist li:first-child { border-top: 0; }
+.xlist li::before { content: "×"; position: absolute; left: 2px; top: 6px; color: var(--gold-text); font-weight: 600; }
+.ticks li { position: relative; padding: 8px 0 8px 28px; border-top: 1px solid var(--line); font-size: 15.5px; }
+.ticks li:first-child { border-top: 0; }
+.ticks li::before { content: ""; position: absolute; left: 2px; top: 1.05em; width: 12px; height: 1.5px; background: var(--gold); }
+.profile { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; grid-column: 1 / -1; }
+.profile h4 { font-size: 15px; letter-spacing: 0; margin-bottom: 8px; }
+.profile li { font-size: 15px; color: var(--muted); padding: 3px 0 3px 16px; position: relative; }
+.profile li::before { content: "•"; position: absolute; left: 0; color: var(--gold-text); }
+
+/* Lieferanten */
+.suppliers { background: var(--paper-2); }
+.onboard { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: s; }
+.onboard li { position: relative; padding: 26px 24px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); }
+.onboard .n { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--ink); color: var(--paper); font-weight: 600; font-size: 15px; margin-bottom: 18px; }
+.onboard b { display: block; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+.onboard span { font-size: 15px; color: var(--muted); }
+.time { margin-top: 16px; font-size: 14.5px; color: var(--muted); }
+.sup-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; margin-top: 40px; }
+.contact-line { display: flex; flex-wrap: wrap; gap: 12px 40px; margin: 18px 0 22px; }
+.contact-line small { display: block; font-size: 13px; color: var(--muted); }
+.contact-line a { font-size: 18px; font-weight: 500; color: var(--ink); text-decoration: none; }
+.contact-line a:hover { color: var(--gold-text); }
+.subject { margin-top: 18px; font-size: 14.5px; color: var(--muted); }
+.subject code { font-family: inherit; color: var(--ink); background: var(--paper); padding: 2px 8px; border-radius: 6px; }
+.docs { display: grid; gap: 10px; margin-top: 18px; }
+.docs li { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 12px; background: var(--paper); font-weight: 500; color: var(--ink); }
+.docs li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex: none; }
+
+/* Kontakt */
+.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.cbox { padding: 28px 24px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); }
+.cbox h3 { font-size: 13px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-text); margin-bottom: 14px; }
+.cbox p, .cbox a { font-size: 16px; color: var(--ink); text-decoration: none; }
+.cbox a:hover { color: var(--gold-text); }
+.cbox small { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); }
+
+/* Fußzeile */
+.footer { background: var(--night); color: var(--night-muted); padding: 64px 0 32px; font-size: 15px; }
+.footer .top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 40px; border-bottom: 1px solid rgba(241,236,226,.12); }
+.footer .logo { color: var(--night-text); font-size: 30px; }
+.footer h4 { color: var(--night-text); font-size: 14px; letter-spacing: 0; margin-bottom: 14px; }
+.footer li { margin: 6px 0; }
+.footer a { color: var(--night-muted); text-decoration: none; }
+.footer a:hover { color: var(--night-text); }
+.footer .bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 24px; font-size: 13.5px; }
+
+/* Rechtsseiten (werkzeug/unterseiten.py) */
+.legal { padding: clamp(48px, 7vw, 96px) 0 clamp(72px, 9vw, 120px); }
+.legal .wrap { max-width: 820px; }
+.legal h1 { font-size: clamp(34px, 4.4vw, 52px); }
+.legal .accent { margin-bottom: 32px; }
+.legal h2 { font-size: 20px; margin: 36px 0 10px; letter-spacing: -0.01em; }
+.legal p + p { margin-top: 10px; }
+.legal ul { margin: 10px 0; }
+.legal li { position: relative; padding-left: 22px; margin: 6px 0; }
+.legal li::before { content: ""; position: absolute; left: 0; top: .85em; width: 10px; height: 1.5px; background: var(--gold); }
+.legal a { color: var(--gold-text); }
+.legal .stand { margin-top: 40px; font-size: 15px; color: var(--muted); }
+.legal .zurueck { display: inline-block; margin-top: 28px; font-weight: 500; color: var(--ink); text-decoration: none; }
+
+/* Einblenden */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
+.js .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  * { transition: none !important; }
+}
+
+/* Tablet */
+@media (max-width: 1080px) {
+  .nav { gap: 20px; }
+  .nav a { font-size: 14.5px; }
+  .onboard, .contact-grid { grid-template-columns: repeat(2, 1fr); }
+  .cats.six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .promise { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .cats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .step:nth-child(3) { border-left: 0; padding-left: 0; }
+  .step { padding-bottom: 28px; }
+  .footer .top { grid-template-columns: 1fr 1fr; }
+}
+/* Handy */
+@media (max-width: 860px) {
+  :root { --header-h: 64px; }
+  .menu-btn { display: block; }
+  .nav {
+    position: fixed; top: var(--header-h); left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
+    padding: 8px var(--gutter) 20px; background: var(--paper); border-bottom: 1px solid var(--line);
+    transform: translateY(-8px); opacity: 0; visibility: hidden; transition: opacity .25s, transform .25s, visibility .25s;
+  }
+  .nav a { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
+  .nav a::after { display: none; }
+  .nav .btn { margin-top: 16px; height: 48px; justify-content: center; border-bottom: 0; }
+  .nav .lang { align-self: flex-start; margin-top: 16px; }
+  .nav .lang a { padding: 6px 12px; border-bottom: 0; font-size: 14px; }
+  .nav .lang b { padding: 6px 12px; font-size: 14px; }
+  .header.open .nav { opacity: 1; transform: none; visibility: visible; }
+  .header.open .menu-btn span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+  .header.open .menu-btn span:nth-child(2) { opacity: 0; }
+  .header.open .menu-btn span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+  .hero .wrap, .area-grid, .about-grid, .z-intro, .panel, .sup-grid { grid-template-columns: 1fr; }
+  .hero::before { display: none; }
+  .hero-media { margin: 8px calc(var(--gutter) * -1) 0; overflow: hidden; }
+  .hero-media img { width: 112%; margin-left: -6%; }
+  .area { min-height: 0; padding-bottom: 180px; }
+  .area .art { width: 250px; right: -16px; bottom: -14px; }
+  .area .foot, .area .copy { max-width: none; }
+  .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cats.six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cats:not(.six) .cat:first-child { grid-column: 1 / -1; }
+  .cat { min-height: 220px; }
+  .cats.six .cat { min-height: 180px; }
+  .focus { grid-template-columns: 1fr; }
+  .profile { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .onboard, .contact-grid, .steps { grid-template-columns: 1fr; }
+  .step + .step { border-left: 0; padding-left: 0; border-top: 1px solid var(--z-line); }
+  .z-cta .facts { width: 100%; justify-content: flex-start; }
+  .z-cta .side, .z-cta .side .btn, .hero .ctas .btn { width: 100%; justify-content: center; }
+  .tabs { display: flex; }
+  .tabs button { flex: 1; padding: 0 10px; }
+  .footer .top { grid-template-columns: 1fr; }
+  .cat .label { left: 14px; right: 14px; bottom: 12px; }
+  .cat .label b { font-size: 16px; }
+  .cat .label span { font-size: 12.5px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="alltrada, nach oben">alltrada<span class="dot">.</span></a>
+    <nav class="nav" id="nav" aria-label="Hauptmenü">
+      <a href="#about">Über uns</a>
+      <a href="#new-goods">Neuware</a>
+      <a href="#returns">Retouren</a>
+      <a href="#procurement">Einkauf</a>
+      <a href="#suppliers">Lieferanten</a>
+      <span class="lang"><a href="../" hreflang="en" lang="en" aria-label="English version">EN</a><b>DE</b></span>
+      <a class="btn btn-ink" href="#contact">Kontakt</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menü" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>alltrada<span class="dot" aria-hidden="true">.</span><span class="sub">Handel und Distribution von Konsumgütern</span></h1>
+      <p class="tagline">Strukturierter Einkauf. Professionelle Distribution. Langfristige Partnerschaften.</p>
+      <div class="what">
+        <h2>Was wir tun</h2>
+        <ul>
+          <li>Großhandelseinkauf und strategische Beschaffung von Konsumgütern</li>
+          <li>Multi-Channel-Distribution in etablierten B2B-Netzwerken</li>
+          <li>Verkauf an Endkunden über Online-Marktplätze</li>
+          <li>Professionelle Aufbereitung und Weiterverkauf von Kundenretouren</li>
+        </ul>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-ink" href="#suppliers">Lieferantenanfragen <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="#areas">Geschäftsbereiche</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img class="float" src="../img/hero.svg" width="807" height="487" alt="Illustration mit einer Palette Neuware und einer Palette Retouren, beide über eine goldene Linie mit ausgehenden Paketen verbunden" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- Geschäftsbereiche -->
+<section class="sec areas" id="areas" aria-labelledby="areas-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="areas-h">Zwei Geschäftsbereiche. Ein Maßstab.</h2>
+    </div>
+    <div class="area-grid">
+      <a class="area area-new reveal" href="#new-goods">
+        <img class="art" src="../img/area-new.svg" width="461" height="332" alt="" loading="lazy">
+        <div class="copy">
+          <span class="eyebrow">Neuware</span>
+          <h3>Markenkonsumgüter</h3>
+          <p>Bezogen von autorisierten Großhändlern und Distributoren, verkauft über etablierte Vertriebskanäle in Deutschland und Europa.</p>
+        </div>
+        <p class="more foot">Neuware <span aria-hidden="true">→</span></p>
+      </a>
+      <a class="area area-ret reveal" href="#returns">
+        <img class="art" src="../img/area-ret.svg" width="461" height="339" alt="" loading="lazy">
+        <div class="copy">
+          <span class="eyebrow">Retouren &amp; Aufbereitung</span>
+          <h3>Aufbereitete Kundenretouren</h3>
+          <p>Kundenretouren aus etablierten Handelskanälen, gemeinsam mit spezialisierten Servicepartnern aufbereitet und einzeln über den alltrada-Shop auf eBay weiterverkauft.</p>
+        </div>
+        <p class="more foot">Retouren &amp; Aufbereitung <span aria-hidden="true">→</span></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Über uns -->
+<section class="sec about" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <h2 id="about-h" style="font-size:clamp(32px,4vw,48px)">Über uns</h2>
+        <span class="accent"></span>
+        <p class="quote">Alltrada ist die Marke von Drechsler Trading &amp; Commerce, einem Handels- und Distributionsunternehmen mit Sitz in Deutschland und Schwerpunkt auf Markenkonsumgütern.</p>
+      </div>
+      <div class="about-text reveal">
+        <p>Unsere Geschäftstätigkeit umfasst die gesamte Wertschöpfungskette des Handels, vom professionellen B2B-Einkauf bis zur Distribution über etablierte Vertriebskanäle in Deutschland und Europa.</p>
+        <p>Wir beziehen Produkte ausschließlich von autorisierten Großhändlern und Distributoren. Jeder Artikel ist Originalware, ordnungsgemäß dokumentiert und wird nach den geltenden rechtlichen und handelsüblichen Anforderungen abgewickelt.</p>
+        <p>Unser Lieferantennetzwerk beruht auf langfristigen, professionellen Beziehungen zu verlässlichen Partnern. Wir arbeiten mit klaren Vertragsstrukturen und transparenten Prozessen und legen großen Wert auf Compliance und Integrität im operativen Geschäft.</p>
+        <p>Als unabhängiges Handelsunternehmen setzen wir auf strukturierte interne Abläufe und halten entlang der gesamten Vertriebskette professionelle Standards ein. So sichern wir Verlässlichkeit und Beständigkeit in allen Geschäftsbereichen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Neuware -->
+<section class="sec zone" id="new-goods" aria-labelledby="new-h">
+  <div class="wrap">
+    <div class="z-intro">
+      <div class="reveal">
+        <span class="eyebrow">Geschäftsbereich</span>
+        <h2 id="new-h">Neuware</h2>
+        <p class="tagline">Autorisierte Quellen. Echte Markenware. Etablierte Kanäle.</p>
+      </div>
+      <div class="body reveal">
+        <p>Unser Neuwarengeschäft konzentriert sich auf Markenkonsumgüter für den täglichen Bedarf. Die Ware beziehen wir ausschließlich von autorisierten Großhändlern und Distributoren und verkaufen sie über etablierte Online-Marktplätze in Deutschland und Europa.</p>
+        <p>Jedes Produkt ist neue Markenware und ordnungsgemäß dokumentiert.</p>
+      </div>
+    </div>
+
+    <ul class="cats six">
+      <li class="cat reveal">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M22 60v-10a26 26 0 0 1 52 0v10"/><rect x="15" y="55" width="15" height="25" rx="6"/><rect x="66" y="55" width="15" height="25" rx="6"/>
+          <path d="M30 61v13M66 61v13" class="f"/><circle cx="73.5" cy="67.5" r="1.7" class="gf"/>
+        </svg>
+        <span class="label"><b>Elektronik</b></span>
+      </li>
+      <li class="cat reveal">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M36 14h20a4 4 0 0 1 4 4v9H36z"/><path d="M60 18h10"/><path d="M55 27c1 5 3 8 7 10"/><path d="M41 27v7M51 27v7"/>
+          <path d="M41 34h10l8 11v35a4 4 0 0 1-4 4H37a4 4 0 0 1-4-4V45z"/><path d="M33 58h26" class="g"/>
+        </svg>
+        <span class="label"><b>Haushalt &amp; Wohnen</b></span>
+      </li>
+      <li class="cat reveal">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M20 12h30l12 12v58H20z"/><path d="M50 12v12h12"/><path d="M28 36h26M28 44h26M28 52h16" class="f"/>
+          <path d="M75 42l6 5-25 31-8 3 2-8z"/><path d="M53 68l6 5" class="g"/>
+        </svg>
+        <span class="label"><b>Bürobedarf</b></span>
+      </li>
+      <li class="cat reveal">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M24 20h14l6 3v3H24z"/><path d="M31 26v8"/><path d="M26 34h10v6H26z"/><rect x="18" y="40" width="26" height="44" rx="6"/><path d="M18 60h26" class="g"/>
+          <path d="M56 16h22v5H56z"/><path d="M57 21h20l-4 50H61z"/><rect x="60" y="71" width="14" height="13" rx="2"/>
+        </svg>
+        <span class="label"><b>Körperpflege &amp; Beauty</b></span>
+      </li>
+      <li class="cat reveal">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M38 50c0-6 4.5-10 10-10s10 4 10 10c0 4.5-4.5 6.5-10 6.5S38 54.5 38 50z"/>
+          <ellipse cx="33" cy="36" rx="3.6" ry="4.6"/><ellipse cx="42" cy="28.5" rx="3.6" ry="4.6"/><ellipse cx="54" cy="28.5" rx="3.6" ry="4.6"/><ellipse cx="63" cy="36" rx="3.6" ry="4.6"/>
+          <path d="M16 68h64" class="g"/><path d="M21 68l5 14h44l5-14"/>
+        </svg>
+        <span class="label"><b>Tierbedarf</b></span>
+      </li>
+      <li class="cat reveal">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M21 66h-6a2 2 0 0 1-2-2v-7a3 3 0 0 1 3-3h7l9-11a4 4 0 0 1 3.1-1.5h25.8a4 4 0 0 1 3 1.4L73 54h8a3 3 0 0 1 3 3v7a2 2 0 0 1-2 2h-7"/>
+          <path d="M35 66h26"/><circle cx="28" cy="66" r="7"/><circle cx="68" cy="66" r="7"/>
+          <path d="M34 53l7.5-9H50v9zM54 44h8.5l7.5 9H54z" class="f"/><circle cx="80" cy="58.5" r="1.7" class="gf"/><path d="M8 76h80" class="f"/>
+        </svg>
+        <span class="label"><b>Auto, Werkzeug &amp; Zubehör</b></span>
+      </li>
+    </ul>
+
+    <h3 class="z-sub reveal" id="business">Geschäftsmodell</h3>
+    <ol class="steps">
+      <li class="step reveal"><span class="n">01</span><h3>Großhandelseinkauf</h3><p>Systematische Beschaffung von Markenkonsumgütern bei autorisierten Distributoren und Großhandelspartnern</p></li>
+      <li class="step reveal"><span class="n">02</span><h3>B2B-Distribution</h3><p>Koordinierte Distribution über etablierte Handelsnetzwerke und langfristige Partnerschaften</p></li>
+      <li class="step reveal"><span class="n">03</span><h3>Marktplatzvertrieb</h3><p>Strukturierter Verkauf an Endkunden über Online-Marktplätze</p></li>
+      <li class="step reveal"><span class="n">04</span><h3>Compliance &amp; Qualitätsstandards</h3><p>Vollständige Einhaltung regulatorischer Vorgaben und handelsüblicher Qualitätsstandards entlang der gesamten Lieferkette</p></li>
+    </ol>
+
+    <div class="z-cta reveal">
+      <div class="mail">
+        <small>Lieferantenanfragen</small>
+        <a href="mailto:purchasing@alltrada.com">purchasing@alltrada.com</a>
+      </div>
+      <div class="side">
+        <a class="btn btn-ink" href="#suppliers">Informationen für Lieferanten <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="#procurement" data-tab="new">Einkauf</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Retouren -->
+<section class="sec zone ton" id="returns" aria-labelledby="returns-h">
+  <div class="wrap">
+    <div class="z-intro">
+      <div class="reveal">
+        <span class="eyebrow">Geschäftsbereich</span>
+        <h2 id="returns-h">Retouren &amp; Aufbereitung</h2>
+        <p class="tagline">Ausgewählte Retouren. Professionelle Aufbereitung. Einzelverkauf.</p>
+      </div>
+      <div class="body reveal">
+        <p>Neben Neuware betreibt alltrada ein eigenes Retourengeschäft. Wir kaufen Kundenretouren palettenweise bei etablierten Handelsunternehmen und spezialisierten Retourenhändlern, bereiten sie gemeinsam mit Servicepartnern auf und verkaufen sie einzeln als Refurbished-Geräte über den alltrada-Shop auf eBay.</p>
+        <p>Unser Schwerpunkt liegt auf Haushalts- und Bodenpflegegeräten etablierter Marken.</p>
+      </div>
+    </div>
+
+    <div class="cats">
+      <a class="cat reveal" href="https://www.ebay.de/str/dtcmarket/Saug-Wischroboter/_i.html?store_cat=42315783010" target="_blank" rel="noopener">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M60 18h18a3 3 0 0 1 3 3v40H57V21a3 3 0 0 1 3-3z"/><path d="M57 30h24"/><rect x="63" y="36" width="12" height="7" rx="2"/><path d="M55 61h28" class="f"/>
+          <ellipse cx="40" cy="62" rx="27" ry="10.5"/><path d="M13 62v5.5c0 5.8 12.1 10.5 27 10.5s27-4.7 27-10.5V62"/>
+          <ellipse cx="46" cy="58" rx="7" ry="2.7"/><path d="M39 58v3c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7v-3"/>
+          <path d="M19 69.5c5 3.2 12.4 5.2 21 5.2" class="f"/><circle cx="29" cy="60" r="1.6" class="gf"/><path d="M8 84h80" class="f"/>
+        </svg>
+        <span class="go" aria-hidden="true">↗</span>
+        <span class="label"><b>Saug- &amp; Wischroboter</b><span lang="de">Im eBay-Shop</span></span>
+      </a>
+      <a class="cat reveal" href="https://www.ebay.de/str/dtcmarket/Kaffeevollautomaten/_i.html?store_cat=42315782010" target="_blank" rel="noopener">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <rect x="26" y="12" width="44" height="70" rx="5"/><path d="M26 24h44"/><rect x="34" y="29" width="28" height="9" rx="2"/><circle cx="38" cy="33.5" r=".9" class="gf"/>
+          <path d="M41 45h14v5H41z"/><path d="M45 50v3M51 50v3"/><path d="M45 55v4M51 55v4" class="g"/>
+          <path d="M39 61h18v5a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7z"/><path d="M57 63h2a3 3 0 0 1 0 6h-2.5"/><path d="M31 77h34"/><path d="M8 86h80" class="f"/>
+        </svg>
+        <span class="go" aria-hidden="true">↗</span>
+        <span class="label"><b>Kaffeevollautomaten</b><span lang="de">Im eBay-Shop</span></span>
+      </a>
+      <a class="cat reveal" href="https://www.ebay.de/str/dtcmarket/Nass-Trockensauger/_i.html?store_cat=42315784010" target="_blank" rel="noopener">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M55 8h9a3 3 0 0 1 3 3v4"/><path d="M55 8l-1 6"/><path d="M66 15 57 38"/>
+          <path d="M51.5 37.5l9 3.5a3 3 0 0 1 1.7 3.9l-8.6 22.3a3 3 0 0 1-3.9 1.7l-9-3.5a3 3 0 0 1-1.7-3.9l8.6-22.3a3 3 0 0 1 3.9-1.7z"/>
+          <path d="M44.5 52.5l10.5 4" class="g"/><path d="M43 66l-4 9"/><rect x="20" y="74" width="42" height="9" rx="3"/><circle cx="27" cy="78.5" r="2.4"/><path d="M8 86h80" class="f"/>
+        </svg>
+        <span class="go" aria-hidden="true">↗</span>
+        <span class="label"><b>Nass-Trockensauger</b><span lang="de">Im eBay-Shop</span></span>
+      </a>
+      <a class="cat reveal" href="https://www.ebay.de/str/dtcmarket/Staubsauger/_i.html?store_cat=42315785010" target="_blank" rel="noopener">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <path d="M12 79c0-13 9-22 23-22h6c8 0 13 5 13 12v10z"/><circle cx="25" cy="79" r="6"/><circle cx="25" cy="79" r="1.6" class="gf"/>
+          <path d="M45 62c11 0 17-8 18-22"/><path d="M60 41l8-5 3 4-8 5z"/><path d="M69 40l13 37"/>
+          <path d="M74 77h16a2 2 0 0 1 2 2v3H72v-3a2 2 0 0 1 2-2z"/><path d="M8 86h86" class="f"/>
+        </svg>
+        <span class="go" aria-hidden="true">↗</span>
+        <span class="label"><b>Staubsauger</b><span lang="de">Im eBay-Shop</span></span>
+      </a>
+      <a class="cat reveal" href="https://www.ebay.de/str/dtcmarket/Kuche-Kaffee/_i.html?store_cat=42315786010" target="_blank" rel="noopener">
+        <svg viewBox="0 0 96 96" aria-hidden="true">
+          <rect x="18" y="74" width="54" height="8" rx="3"/><path d="M58 74V44"/><path d="M70 74V44"/>
+          <path d="M26 26h40a8 8 0 0 1 8 8v4a6 6 0 0 1-6 6H30a6 6 0 0 1-6-6v-8a4 4 0 0 1 2-4z"/><path d="M38 44v9"/><path d="M33 53l2 6M43 53l-2 6" class="f"/>
+          <path d="M22 54h34" class="g"/><path d="M24 54l3 14a6 6 0 0 0 6 6h12a6 6 0 0 0 6-6l3-14"/><circle cx="68" cy="33" r="2.5"/><path d="M8 86h80" class="f"/>
+        </svg>
+        <span class="go" aria-hidden="true">↗</span>
+        <span class="label"><b>Küchengeräte</b><span lang="de">Im eBay-Shop</span></span>
+      </a>
+    </div>
+
+    <h3 class="z-sub reveal">Ablauf</h3>
+    <ol class="steps">
+      <li class="step reveal"><span class="n">01</span><h3>Einkauf</h3><p>Palettenweiser Ankauf von Kundenretouren, jede Palette vorab einzeln bewertet.</p></li>
+      <li class="step reveal"><span class="n">02</span><h3>Aufbereitung</h3><p>Reinigung, Reparatur und Austausch von Teilen nach Bedarf, durchgeführt von spezialisierten Servicepartnern.</p></li>
+      <li class="step reveal"><span class="n">03</span><h3>Dokumentation</h3><p>Eigene Fotos und eine festgelegte Zustandsstufe für jedes Gerät.</p></li>
+      <li class="step reveal"><span class="n">04</span><h3>Verkauf</h3><p>Einzelangebot und Versand über den alltrada-Shop auf eBay.</p></li>
+    </ol>
+
+    <div class="promise reveal">
+      <div>
+        <span class="eyebrow">Garantie</span>
+        <h3>Unser Qualitätsversprechen</h3>
+        <p class="lead">Auf unsere aufbereiteten Geräte geben wir eine eigene Händlergarantie. Garantiegeber sind wir, alltrada aus Dresden.</p>
+      </div>
+      <ul>
+        <li><b>12 Monate Händlergarantie</b>Ab dem Tag, an dem das Gerät bei Ihnen zugestellt oder von Ihnen abgeholt wird.</li>
+        <li><b>Auch spätere Defekte</b>Fällt eine Funktion aus, ist das ein Garantiefall, auch wenn der Fehler erst nach der Lieferung entsteht. Hat das Gerät einen Akku, ist er eingeschlossen.</li>
+        <li><b>Ohne Kosten für Sie</b>Für die Garantie zahlen Sie nichts zusätzlich. Versand innerhalb Deutschlands, Ersatzteile und Arbeit tragen wir.</li>
+      </ul>
+      <p class="fine">Als Verbraucher behalten Sie selbstverständlich Ihre gesetzlichen Rechte bei Mängeln, zwei Jahre ab Lieferung und kostenlos. Die Garantie kommt hinzu. Es gelten die vollständigen Garantiebedingungen im Angebot des Geräts.</p>
+    </div>
+
+    <div class="z-cta reveal">
+      <div>
+        <div class="facts">
+          <span><b data-ebay="feedback">100 %</b><small>positive Bewertungen</small></span>
+          <span><b data-ebay="sold">500+</b><small>verkaufte Artikel</small></span>
+        </div>
+        <a class="src" href="https://www.ebay.de/str/dtcmarket?_tab=feedback" target="_blank" rel="noopener">Bewertungen und Verkäufe auf eBay ↗</a>
+      </div>
+      <div class="side">
+        <a class="btn btn-gold" href="https://www.ebay.de/str/dtcmarket" target="_blank" rel="noopener">Zum alltrada-Shop <span class="arr" aria-hidden="true">↗</span></a>
+        <a class="btn btn-line" href="#procurement" data-tab="returns">Retourenware anbieten</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Einkauf -->
+<section class="sec" id="procurement" aria-labelledby="proc-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="proc-h">Einkauf</h2>
+      <span class="accent"></span>
+      <p class="lead">Der Einkauf bei Alltrada folgt einem strukturierten Beschaffungsrahmen mit festgelegten Produktkategorien, klar definierten Ausschlusskriterien und standardisierten Abwicklungsbedingungen.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Einkaufsbereiche">
+      <button role="tab" id="t-new" aria-controls="p-new" aria-selected="true">Neuware</button>
+      <button role="tab" id="t-ret" aria-controls="p-ret" aria-selected="false" tabindex="-1">Kundenretouren</button>
+    </div>
+
+    <div class="panel" id="p-new" role="tabpanel" aria-labelledby="t-new">
+      <div class="box">
+        <h3>Produktschwerpunkte</h3>
+        <p class="muted">Wir beziehen Markenkonsumgüter in folgenden Kategorien:</p>
+        <ul class="focus">
+          <li><b>Elektronik</b><span>Kleinelektronik, Haushaltsgeräte, Zubehör</span></li>
+          <li><b>Haushalt &amp; Wohnen</b><span>Reinigungsprodukte, Haushaltsbedarf, Artikel des täglichen Bedarfs</span></li>
+          <li><b>Bürobedarf</b><span>Schreibwaren, Papierprodukte, Büromaterial</span></li>
+          <li><b>Körperpflege &amp; Beauty</b><span>Hygieneartikel, Pflegeprodukte, Kosmetik</span></li>
+          <li><b>Tierbedarf</b><span>Tiernahrung, Zubehör, Pflegeprodukte</span></li>
+          <li><b>Auto, Werkzeug &amp; Zubehör</b><span>Autozubehör, Werkzeuge, Heimwerkerbedarf</span></li>
+        </ul>
+        <p class="note">Alle Produkte müssen neue Markenware aus autorisierten Quellen sein.</p>
+      </div>
+      <div class="box">
+        <h3>Ausschlusskriterien</h3>
+        <p class="muted">Zur Wahrung unserer Qualitäts- und Compliance-Standards kaufen wir nicht ein:</p>
+        <ul class="xlist">
+          <li>Gebrauchte, aufbereitete oder retournierte Ware</li>
+          <li>Produkte aus nicht verifizierten Quellen oder vom Graumarkt</li>
+          <li>Fälschungen oder nicht autorisierte Parallelimporte</li>
+          <li>Ware mit beschädigter Verpackung oder überschrittenem Haltbarkeitsdatum</li>
+          <li>Markenlose oder White-Label-Artikel ohne ordnungsgemäße Dokumentation</li>
+        </ul>
+      </div>
+      <div class="box profile-box" style="grid-column:1/-1">
+        <h3>Einkaufsprofil</h3>
+        <div class="profile">
+          <div><h4>Bestellvolumen</h4><ul><li>Einstieg mit Verpackungseinheiten und Palettenbestellungen</li><li>Ausbau abhängig von der Absatzentwicklung</li><li>Regelmäßige Nachbestellungen erfolgreicher Produkte</li></ul></div>
+          <div><h4>Bezugsregionen</h4><ul><li>Primär: Europäische Union</li><li>Sekundär: ausgewählte internationale Märkte</li></ul></div>
+          <div><h4>Zahlungsbedingungen</h4><ul><li>Zu Beginn nach den Vorgaben des Lieferanten</li><li>Im weiteren Verlauf nach gemeinsamer Vereinbarung</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="p-ret" role="tabpanel" aria-labelledby="t-ret" hidden>
+      <div class="box">
+        <h3>Produktschwerpunkte</h3>
+        <p class="muted">Wir kaufen Kundenretouren in folgenden Kategorien:</p>
+        <ul class="focus">
+          <li><b>Saug- &amp; Wischroboter</b>Saugroboter, Wischroboter, Basisstationen</li>
+          <li><b>Bodenpflege</b>Nass-Trockensauger, Akku- und Bodenstaubsauger</li>
+          <li><b>Kaffeemaschinen</b>Kaffeevollautomaten und Siebträgermaschinen</li>
+          <li><b>Küchengeräte</b>Küchenmaschinen, Zerkleinerer, Küchenkleingeräte</li>
+        </ul>
+        <p class="note">Retouren kaufen wir als vollständige Posten, nicht als Einzelartikel.</p>
+      </div>
+      <div class="stack">
+        <div class="box">
+          <h3>Anforderungen</h3>
+          <ul class="ticks">
+            <li>Kundenretouren aus nachvollziehbaren Handelsquellen</li>
+            <li>Artikelliste oder Manifest mit EAN oder ASIN, sofern vorhanden</li>
+            <li>Einzelne Paletten und wiederkehrende Posten</li>
+            <li>Lieferung innerhalb Deutschlands und der Europäischen Union</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Einkaufsprofil</h3>
+          <ul class="ticks">
+            <li>Primär: Deutschland</li>
+            <li>Sekundär: Europäische Union</li>
+            <li>Ausbau abhängig von der Aufbereitungskapazität</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lieferanten -->
+<section class="sec suppliers" id="suppliers" aria-labelledby="sup-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="sup-h">Informationen für Lieferanten</h2>
+      <span class="accent"></span>
+      <p class="lead">Die Aufnahme neuer Lieferanten bei Alltrada folgt einem Verifizierungsrahmen aus Eignungsstandards, Dokumentationspflichten und Kriterien zur Produktautorisierung.</p>
+    </div>
+
+    <h3 class="reveal" style="font-size:20px;margin-bottom:18px">Ablauf der Aufnahme</h3>
+    <ol class="onboard">
+      <li class="reveal"><span class="n">1</span><b>Erstanfrage</b><span>Produktkatalog und Unternehmensangaben einreichen.</span></li>
+      <li class="reveal"><span class="n">2</span><b>Verifizierung</b><span>Prüfung der Unternehmensregistrierung und des Umsatzsteuerstatus.</span></li>
+      <li class="reveal"><span class="n">3</span><b>Bewertung</b><span>Sichtung von Sortiment, Autorisierungsstatus und Konditionen.</span></li>
+      <li class="reveal"><span class="n">4</span><b>Erstbestellung</b><span>Pilotbestellung nach Freigabe und Bestätigung der Konditionen.</span></li>
+    </ol>
+    <p class="time">Die Bearbeitung dauert in der Regel 5 bis 7 Arbeitstage.</p>
+
+    <div class="sup-grid">
+      <div class="box reveal">
+        <h3>Lieferantenanfragen</h3>
+        <div class="contact-line">
+          <div><small>E-Mail</small><a href="mailto:purchasing@alltrada.com">purchasing@alltrada.com</a></div>
+          <div><small>Telefon</small><a href="tel:+491741518634">+49 174 1518634</a><small>Montag bis Samstag, 9 bis 17 Uhr</small></div>
+        </div>
+        <p class="muted" style="margin-bottom:8px">Für eine zügige Bearbeitung senden Sie uns bitte:</p>
+        <ul class="ticks">
+          <li>Firmenname und USt-IdNr.</li>
+          <li>Produktkatalog oder Preisliste als PDF oder Excel</li>
+          <li>Mindestbestellmengen und Zahlungsbedingungen</li>
+          <li>Autorisierungsnachweise, sofern vorhanden</li>
+          <li>Bei Kundenretouren: Manifest oder Artikelliste und Herkunft der Ware</li>
+        </ul>
+        <p class="subject">Bitte nennen Sie im Betreff <code>Lieferantenanfrage</code> und Ihren Firmennamen.</p>
+      </div>
+      <div class="box reveal">
+        <h3>Unsere Nachweise</h3>
+        <p class="muted">Zur Verifizierung und für Compliance-Zwecke stellen wir auf Anfrage folgende Unterlagen bereit:</p>
+        <ul class="docs">
+          <li>Gewerbeanmeldung</li>
+          <li>USt-IdNr.</li>
+          <li>Angaben zum Inhaber</li>
+          <li>Zahlungs- und Bankdaten</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section class="sec" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="contact-h">Kontakt</h2>
+      <span class="accent"></span>
+    </div>
+    <div class="contact-grid">
+      <div class="cbox reveal">
+        <h3>Anschrift</h3>
+        <address style="font-style:normal"><p>Drechsler Trading &amp; Commerce<br>St. Petersburger Straße 30<br>01069 Dresden<br>Deutschland</p></address>
+      </div>
+      <div class="cbox reveal">
+        <h3>E-Mail</h3>
+        <a href="mailto:contact@alltrada.com">contact@alltrada.com</a>
+        <small>Allgemeine Anfragen</small>
+      </div>
+      <div class="cbox reveal">
+        <h3>Telefon</h3>
+        <a href="tel:+491741518634">+49 174 1518634</a>
+        <small>Montag bis Samstag, 9 bis 17 Uhr</small>
+      </div>
+      <div class="cbox reveal">
+        <h3>eBay-Shop</h3>
+        <a href="https://www.ebay.de/str/dtcmarket" target="_blank" rel="noopener">ebay.de/str/dtcmarket ↗</a>
+        <small>Refurbished-Geräte</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="logo" href="#top">alltrada<span class="dot">.</span></a>
+        <p style="margin-top:12px;max-width:320px">Unabhängiges Handels- und Distributionsunternehmen · Deutschland</p>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul><li><a href="#about">Über uns</a></li><li><a href="#new-goods">Neuware</a></li><li><a href="#returns">Retouren</a></li><li><a href="#contact">Kontakt</a></li></ul>
+      </div>
+      <div>
+        <h4>Partner</h4>
+        <ul><li><a href="#procurement">Einkauf</a></li><li><a href="#suppliers">Lieferanten</a></li><li><a href="mailto:purchasing@alltrada.com">purchasing@alltrada.com</a></li></ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul><li><a href="impressum/">Impressum</a></li><li><a href="datenschutz/">Datenschutz</a></li><li><a href="nutzungsbedingungen/">Nutzungsbedingungen</a></li></ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="y">2026</span> alltrada. Alle Rechte vorbehalten.</span>
+      <span>Drechsler Trading &amp; Commerce · USt-IdNr. DE408922138</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const header = document.querySelector(".header");
+  const menuBtn = document.querySelector(".menu-btn");
+  const nav = document.getElementById("nav");
+
+  // Kopfzeile bekommt beim Scrollen eine Linie
+  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // Menü am Handy
+  menuBtn.addEventListener("click", () => {
+    const open = header.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open);
+  });
+  nav.addEventListener("click", e => {
+    if (e.target.closest("a")) { header.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+  });
+
+  // Aktiver Menüpunkt nach Abschnitt
+  const links = [...nav.querySelectorAll('a[href^="#"]')];
+  const byId = Object.fromEntries(links.map(a => [a.getAttribute("href").slice(1), a]));
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        links.forEach(a => a.classList.remove("active"));
+        byId[en.target.id]?.classList.add("active");
+      }
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  Object.keys(byId).forEach(id => { const s = document.getElementById(id); if (s) spy.observe(s); });
+
+  // Einblenden beim Scrollen
+  const rev = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); rev.unobserve(en.target); } });
+  }, { rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".reveal").forEach(el => rev.observe(el));
+
+  // Reiter im Einkauf
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const select = tab => {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute("aria-selected", on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+    });
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener("click", () => select(t));
+    t.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        const n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+        select(n); n.focus();
+      }
+    });
+  });
+  // Knöpfe aus den Bereichen öffnen im Einkauf gleich den passenden Reiter
+  document.querySelectorAll("[data-tab]").forEach(a => a.addEventListener("click", () => select(a.dataset.tab === "returns" ? tabs[1] : tabs[0])));
+
+  document.getElementById("y").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
